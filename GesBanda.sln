@@ -5,9 +5,11 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GesBanda", "GesBanda\GesBanda.csproj", "{A91A1885-EF4C-460E-868B-5319DB3E65ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GesBanda.Dal", "GesBanda.Dal\GesBanda.Dal.csproj", "{6633B720-364D-4966-AFC8-8756EEBD42F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GesBanda.Dal", "GesBanda.Dal\GesBanda.Dal.csproj", "{6633B720-364D-4966-AFC8-8756EEBD42F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GesBanda.Api", "GesBanda.Api\GesBanda.Api.csproj", "{47DE49D9-5EBD-4DCD-ADC3-B7B3B812F106}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GesBanda.Api", "GesBanda.Api\GesBanda.Api.csproj", "{FF423B78-4CBD-4AD2-8BB0-901C09A2ED01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GesBanda.Api.Tests", "GesBanda.Api.Tests\GesBanda.Api.Tests.csproj", "{1347CAF6-7782-44E2-A696-8797F64030E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +25,14 @@ Global
 		{6633B720-364D-4966-AFC8-8756EEBD42F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6633B720-364D-4966-AFC8-8756EEBD42F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6633B720-364D-4966-AFC8-8756EEBD42F2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47DE49D9-5EBD-4DCD-ADC3-B7B3B812F106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47DE49D9-5EBD-4DCD-ADC3-B7B3B812F106}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47DE49D9-5EBD-4DCD-ADC3-B7B3B812F106}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47DE49D9-5EBD-4DCD-ADC3-B7B3B812F106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF423B78-4CBD-4AD2-8BB0-901C09A2ED01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF423B78-4CBD-4AD2-8BB0-901C09A2ED01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF423B78-4CBD-4AD2-8BB0-901C09A2ED01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF423B78-4CBD-4AD2-8BB0-901C09A2ED01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1347CAF6-7782-44E2-A696-8797F64030E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1347CAF6-7782-44E2-A696-8797F64030E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1347CAF6-7782-44E2-A696-8797F64030E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1347CAF6-7782-44E2-A696-8797F64030E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

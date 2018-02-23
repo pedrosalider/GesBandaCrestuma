@@ -20,12 +20,23 @@ namespace GesBanda
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
+                      "~/bower_components/bootstrap/dist/js/bootstrap.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                "~/bower_components/bootstrap/dist/css/bootstrap.css",
+                "~/bower_components/Ionicons/css/ionicons.min.css",
+                "~/Content/site.css",
+                "~/bower_components/admin-lte/dist/css/AdminLTE.css",
+                "~/bower_components/admin-lte/dist/css/skins/skin-green.css"
+            ));
+
+            bundles.Add(new ScriptBundle("~/admin-lte/js").Include(
+                "~/bower_components/admin-lte/dist/js/adminlte.min.js",
+                "~/bower_components/fastclick/lib/fastclick.js"
+                ));
+
+
         }
     }
 }
