@@ -254,10 +254,23 @@ desired effect
                         </a>
                         <ul class="treeview-menu">
                             <li class="active">
-                                @Html.ActionLink("Partituras", "Index", "Home")
+                                @Html.ActionLink("Partituras", "Index", "Score")
                             </li>
                             <li>@Html.ActionLink("Relatórios", "About", "Home")</li>
-                            <li>@Html.ActionLink("Manutenção", "About", "Home")</li>
+                            <li class="treeview">
+                                <a href="#">
+                                    Manutenção
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="#">Atributos</a></li>
+                                    <li><a href="#">Compositores</a></li>
+                                    <li><a href="#">Géneros</a></li>
+                                    <li><a href="#">Partes de partituras</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
 
@@ -273,11 +286,32 @@ desired effect
                             <li>@Html.ActionLink("Lista de sócios", "Index", "Home")</li>
                             <li>@Html.ActionLink("Mapa de sócios", "About", "Home")</li>
                             <li>@Html.ActionLink("Mapa de quotas por ano", "About", "Home")</li>
-                            <li>@Html.ActionLink("Gestão de quotas", "About", "Home")</li>
-                            <li>@Html.ActionLink("Manutenção", "About", "Home")</li>
+                            <li class="treeview">
+                                <a href="#">
+                                    Gestão de quotas
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="#">Planos de pagamento</a></li>
+                                    <li><a href="#">Aplicação de planos de pagamento</a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    Manutenção
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="#">Categorias</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    
+
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-building"></i> <span>Imobilizado</span>
@@ -288,7 +322,19 @@ desired effect
                         <ul class="treeview-menu">
                             <li>@Html.ActionLink("Bens de imobilizado", "About", "Home")</li>
                             <li>@Html.ActionLink("Mapa de bens", "About", "Home")</li>
-                            <li>@Html.ActionLink("Manutenção", "About", "Home")</li>
+                            <li class="treeview">
+                                <a href="#">
+                                    Manutenção
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a href="#">Tipos de bens</a></li>
+                                    <li><a href="#">Categorias</a></li>
+                                    <li><a href="#">Atributos</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
 
@@ -307,7 +353,7 @@ desired effect
                             <li>@Html.ActionLink("Mapas", "About", "Home")</li>
                         </ul>
                     </li>
-                
+
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>
@@ -317,14 +363,7 @@ desired effect
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-                <h1>
-                    Page Header
-                    <small>Optional description</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                    <li class="active">Here</li>
-                </ol>
+                @RenderSection("PageHeader", false)
             </section>
             <!-- Main content -->
             <section class="content container-fluid">

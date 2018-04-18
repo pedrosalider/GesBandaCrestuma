@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Partituras";
+}
+
+@section PageHeader
+{
+    <h1>
+        Partituras
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li class="active">Lista de partituras</li>
+    </ol>
+}
+
+
+<div class="box box-success">
+    <div class="box-header with-border">
+        <h3 class="box-title">Lista de partituras</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        @Html.ActionLink("Adicionar registo", "Edit", "Score", new { @class = "btn btn-block btn-default" })
+
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>Nome</th>
+                    <th>Compositor</th>
+                    <th>Arranjo</th>
+                    <th>Género</th>
+                    <th>Arquivo</th>
+                    <th>Part.Numero</th>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- /.box-body -->
+</div>
+

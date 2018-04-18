@@ -4,14 +4,19 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace GesBanda.Api.Controllers
+namespace GesBanda.Controllers
 {
-    public class HomeController : Controller
+    public class ScoreController : Controller
     {
+        // GET: Score
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            return View();
+        }
 
+        // GET: Score
+        public ActionResult Edit()
+        {
             return View();
         }
     }
